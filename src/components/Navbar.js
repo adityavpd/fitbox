@@ -1,9 +1,7 @@
 import { Component } from "react";
 import "react-icons";
-//import './NavbarStyles.css'
-import {Link, Navigate } from "react-router-dom";
-
-import '../components/NavbarStyles.css'
+import {Link} from "react-router-dom";
+import '../components/NavbarStyles.css';
 
 class Navbar extends Component
 {

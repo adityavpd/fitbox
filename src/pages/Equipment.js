@@ -1,18 +1,117 @@
 import React from "react";
-import './Equipment.css'
+import './EquipmentStyles.css'
+import rband from "../resources/rband.jpg"
+import dumbbell from "../resources/dumbbell.jpg"
+import abflex from "../resources/abflex.jpg"
+import jumprope from "../resources/jumprope.jpg"
+
+
 class Equipment extends React.Component
 {
     render()
     {
-        return( 
-        <div className="heading">
-            
-            <p className="about_p">Founded In 2022, We are a team of motivated and skilled trainers. Fitbox was started as a way to bring
-                quality Gym training to the masses. 
-            </p>
-        </div>
+        return(<>
+                <br/>
+                <h1>Suitable Equipment For Home Use</h1>
+                <div class="container">
+                <div class="card">
+                            <div class="card-header">
+                                <img src={rband} alt="rover" />
+                                </div>
+                                <div class="card-body">
+                                <span class="tag tag-mint"><strong>Resistance Training</strong></span>
+                                <h4>
+                                <ul>
+                                    <li>Lightweight</li>
+                                    <li>Tone and strengthen</li>
+                                    <li>Protects bones and joints</li>
+                                    <br/>
+                                </ul>
+                                </h4>
+                                <p>
+                                Email us for more information!
+                                <br/><br/>
+                                <input className="input1" type="email" placeholder="Enter Email"></input>
+                                <button className="bt">Connect</button>
+                                </p>
+                                
+                            
+                        </div>
 
-        )
+                        
+                    </div>
+
+                    <div class="card">
+                            <div class="card-header">
+                                <img src={dumbbell} alt="rover" />
+                                </div>
+                                <div class="card-body">
+                                <span class="tag tag-pink"><strong>Weight Training</strong></span>
+                                <h4>
+                                <ul>
+                                    <li>Versatile</li>
+                                    <li>inter & intramuscular coordination</li>
+                                    <li>Stimulate muscle growth</li>
+                                </ul>
+                                </h4>
+                                <p>
+                                Email us for more information!
+                                <br/><br/>
+                                <input className="input1" type="email" placeholder="Enter Email"></input>
+                                <button className="bt">Connect</button>
+                                </p>
+                                </div>
+                            
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <img src={abflex} alt="rover" />
+                                </div>
+                                <div class="card-body">
+                                <span class="tag tag-orange"><strong>Core Training</strong></span>
+                                <h4>
+                                <ul>
+                                    <li>Easy to use</li>
+                                    <li>Boosts Core Strength & Stability</li>
+                                    <li>Better Posture</li>
+                                </ul>
+                                </h4>
+                                <p>
+                                Email us for more information!
+                                <br/><br/>
+                                <input className="input1" type="email" placeholder="Enter Email"></input>
+                                <button className="bt">Connect</button>
+                                </p>
+                                </div>
+                            
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <img src={jumprope} alt="rover" />
+                                </div>
+                                <div class="card-body">
+                                <span class="tag tag-purple"><strong>Cardio Training</strong></span>
+                                <h4>
+                                <ul>
+                                    <li>Promotes Heart Health</li>
+                                    <li>Fat Burner</li>
+                                    <li>Improved Focus & Coordination</li>
+                                </ul>
+                                </h4>
+                                <p>
+                                Email us for more information!
+                                <br/><br/>
+                                <input className="input1" type="email" placeholder="Enter Email"></input>
+                                <button className="bt">Connect</button>
+                                </p>
+                                </div>
+                            
+                        </div>
+                        
+                    
+                </div>
+                <br/>
+            </>)
     }
 }
 

@@ -19,6 +19,11 @@ function Admin()
         }
 
     }
+    function logOut()
+    {
+        setShow(false);
+        setPassword('')
+    }
     
     render()
     {
@@ -29,7 +34,7 @@ function Admin()
                     <div className="contact-tables">
                         
                        <h1>hi</h1>
-                       <button className="login-button" onClick={()=>setShow(false)}>Logout</button>
+                       <button className="login-button" onClick={logOut}>Logout</button>
 
                     </div>
                     </>:

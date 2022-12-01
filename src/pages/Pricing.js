@@ -6,6 +6,7 @@ class Pricing extends React.Component
     render()
     {
         return(<>
+        <br/>
         <h2>Our Plans!</h2>
             <div className="plans">
                 <ul className="tiers">
@@ -27,6 +28,7 @@ class Pricing extends React.Component
             </div>
             <div className="custom_plan">
             <ContactForm/>
+            <br/>
             </div>
         </>)
     }

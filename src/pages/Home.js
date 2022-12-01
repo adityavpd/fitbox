@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom";
-import './HomeStyles.css'
-import homeimage from '../resources/homepage.jpg'
+import './HomeStyles.css';
 class Home extends React.Component
 
 {

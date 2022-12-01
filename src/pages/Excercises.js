@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./ExcercisesStyles.css"
 import pendlayimg from "../resources/pendlay.jpg";
 import dbfly from "../resources/dbfly.jpg"
