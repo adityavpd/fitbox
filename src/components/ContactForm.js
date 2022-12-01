@@ -1,6 +1,5 @@
 import { render } from "@testing-library/react";
 import React, { useState, useRef } from "react";
-import emailjs from '@emailjs/browser';
 import './FormStyles.css'
 function ContactForm()
 {   
@@ -30,13 +29,7 @@ function ContactForm()
           else
           {
             alert("Submitted! We will contact you shortly!\n" + "Name: " + name + "\n Age: " + age + "\nPh No: " + telephone  )
-            emailjs.sendForm('service_0mh4pch', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-        };
+            
           }
           
    
@@ -61,4 +54,5 @@ function ContactForm()
             )
             
         }
+}
 export default ContactForm;
