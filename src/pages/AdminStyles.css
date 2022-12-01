@@ -1,0 +1,41 @@
+.login-card, .contact-tables
+{
+    margin: auto 50%;
+    padding-top: 30px;
+    
+}
+
+.login-button
+{
+    color: #1cc49d;
+    background-color: #1b2f31;
+    border-radius: 50px;
+    border-color:#1b2f31;
+    box-shadow: none;
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+    height: 3em;
+    width: 8em;
+    font-size: large;
+    font-weight: 600;
+    text-decoration: none;
+    
+    
+}
+
+.input
+{
+    color: #1cc49d;
+    background-color:#1b2f31;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 3em;
+    width: 8em; */
+    
+    text-decoration: none;
+   
+}

@@ -1,0 +1,62 @@
+*
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2
+{
+    text-align: center;
+}
+
+div.plans
+{   font-size:20px;
+    margin:auto auto;
+}
+
+
+.plans
+{
+    width: 50%;
+    float: left;
+    padding-top:0px;
+    padding-bottom: 50px;
+   
+}
+
+li
+{
+    padding:10px;
+    
+}
+
+.tiers
+{
+    text-align:center;
+    list-style-type: none;
+    border: 1px solid #1cc49d;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+   
+}
+
+
+
+.tiers .header {
+    background-color: #1b2f31;
+    color: white;
+    font-size: 25px;
+}
+
+
+b{
+    color:yellowgreen;
+}
+.price
+{
+    color:green;
+}
+i.price1
+{
+    color:red;
+}

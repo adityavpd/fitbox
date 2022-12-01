@@ -1,0 +1,104 @@
+.main
+{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  padding-top:100px;
+  padding-bottom:100px;
+  text-align:center;
+  width:100%;
+  
+}
+
+.bt1 {
+  color: #1cc49d;
+  background-color: #1b2f31;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  width: 8em;
+  font-size: large;
+  font-weight: 600;
+  text-decoration: none;
+  margin:auto;
+  border:0;
+  
+
+}
+
+.bt1:hover
+{
+  background-color: #12555c;
+}
+
+.tm1 {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #1cc49d;
+  display: inline-block;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  margin: 35px 10px 10px;
+  max-width: 310px;
+  min-width: 250px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-color: #1b2f31;
+  border-radius: 5px;
+  border-top: 5px solid red;
+}
+
+.tm1 *,
+.tm1 *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.tm1 figcaption {
+  padding: 13% 10% 12%;
+  padding-top: 0;
+}
+
+.tm1 figcaption:before {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: red;
+  content: "\f10e";
+  font-family: 'FontAwesome';
+  font-size: 32px;
+  font-style: normal;
+  left: 50%;
+  line-height: 60px;
+  position: absolute;
+  top: -30px;
+  width: 60px;
+}
+
+.tm1 h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 10px 0 5px;
+}
+
+.tm1 h4 {
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.5;
+}
+
+.tm1 blockquote {
+  font-style: italic;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+h1{
+  padding: 0px;
+}
