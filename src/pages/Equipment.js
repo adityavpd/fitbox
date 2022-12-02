@@ -1,4 +1,6 @@
-import React from "react";
+import React, {useRef, useState} from "react";
+import { render } from "@testing-library/react";
+import emailjs from "@emailjs/browser";
 import './EquipmentStyles.css'
 import rband from "../resources/rband.jpg"
 import dumbbell from "../resources/dumbbell.jpg"
@@ -6,8 +8,27 @@ import abflex from "../resources/abflex.jpg"
 import jumprope from "../resources/jumprope.jpg"
 
 
-class Equipment extends React.Component
+function Equipment()
 {
+        const [emaild, setEmailid] = useState('');
+        const form = useRef();
+        function handleEmailChange(e)
+        {
+            setEmailid(e.target.value);
+        }
+      
+        const sendEmail = (e) => {
+          e.preventDefault();
+      
+          emailjs.sendForm('service_0mh4pch', 'template_flx657a', form.current, 'AnOk4ADkKQvUhNnzV')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        };
+      
+
     render()
     {
         return(<>
@@ -31,8 +52,11 @@ class Equipment extends React.Component
                                 <p>
                                 Email us for more information!
                                 <br/><br/>
+                                <form ref={form} onSubmit={sendEmail}>
                                 <input className="input1" type="email" placeholder="Enter Email"></input>
-                                <button className="bt">Connect</button>
+                                <input type="submit" class="bt"></input>
+                                </form>
+                                
                                 </p>
                                 
                             
@@ -57,8 +81,10 @@ class Equipment extends React.Component
                                 <p>
                                 Email us for more information!
                                 <br/><br/>
-                                <input className="input1" type="email" placeholder="Enter Email"></input>
-                                <button className="bt">Connect</button>
+                                <form ref={form} onSubmit={sendEmail}>
+                                <input className="input1" type="email" placeholder="Enter Email" ></input>
+                                <input type="submit" class="bt"></input>
+                                </form>
                                 </p>
                                 </div>
                             
@@ -79,8 +105,10 @@ class Equipment extends React.Component
                                 <p>
                                 Email us for more information!
                                 <br/><br/>
+                                <form ref={form} onSubmit={sendEmail}>
                                 <input className="input1" type="email" placeholder="Enter Email"></input>
-                                <button className="bt">Connect</button>
+                                <input type="submit" class="bt"></input>
+                                </form>
                                 </p>
                                 </div>
                             
@@ -101,8 +129,10 @@ class Equipment extends React.Component
                                 <p>
                                 Email us for more information!
                                 <br/><br/>
+                                <form ref={form}  onSubmit={sendEmail}>
                                 <input className="input1" type="email" placeholder="Enter Email"></input>
-                                <button className="bt">Connect</button>
+                                <input type="submit"  className="bt"></input>
+                                </form>
                                 </p>
                                 </div>
                             
